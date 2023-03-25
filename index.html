@@ -53,13 +53,13 @@
         /*
             https://fakerapi.it/api/v1/persons?_quantity=9
         */
-        const link = "https://fakerapi.it/api/v1/persons?_quantity=5&";
+        const link = "https://fakerapi.it/api/v1/persons?_quantity=9";
 
         const createCard = function(obj) {
             const card = document.createElement("div");
             card.className = "card";
             card.classList.add(obj.gender);
-            card.innerText = obj.firstname;
+            card.innerText = obj.firstname+" "+obj.lastname;
             box.append(card);
         }
 
